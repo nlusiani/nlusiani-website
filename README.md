@@ -1,1 +1,2 @@
-"# njl-website.guthub.io" 
+This is my personal website, built with Quarto.
+
