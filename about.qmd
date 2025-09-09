@@ -1,0 +1,27 @@
+---
+title: "About"
+image: images/NLusiani_RoosHeadshotFull.png
+about:
+  template: trestles
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/nlusiani/"
+    - text: BlueSky
+      icon: bluesky
+      url: "https://bsky.app/profile/nikolusiani.bsky.social"
+    - text: SSRN
+      icon: SSRN
+      url: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=828583"
+    - icon: envelope
+      text: Contact me
+      href: mailto:nlusiani@gmail.com
+      
+      
+---
+
+Nicholas (Niko) Lusiani is a internationally recognized expert in economic justice, known for his incisive research, public thought leadership, and policy impact in the fields of corporate governance, tax, finance, and inequality. With two decades of experience across think tanks, NGOs, and grassroots organizations, Lusiani brings exceptional analytical rigor, a deep aptitude for coalition-building and a strategic vision for systems change. As Director of Corporate Power at the [Roosevelt Institute](https://rooseveltinstitute.org/), he led pioneering work on corporate taxation, inflation and market power and the clean energy transition-—shaping public discourse through regular commentary in outlets like the *Financial Times*, *Bloomberg*, *TaxNotes* and *ABC News*. A prolific and ambidextrous author, his writing spans peer-reviewed academic publications, policy briefs, articles and op-eds. Niko is currently writing his first book on the public origins of corporate value.
+
+Throughout his career - including senior roles at [Oxfam](https://www.oxfamamerica.org/) and the [Center for Economic and Social Rights](https://www.cesr.org/) - Lusiani's unique fluency across academic, policy, and media arenas has enabled him to drive narrative change while also securing tangible legal, regulatory and legislative victories. His cutting-edge applied research helped shift U.S. government stances on vaccine equity, shaped the UN Guiding Principles on Business and Human Rights and UN Sustainable Development Goals, and informed new global tax reporting standards, FASB accounting standards and SEC disclosures. His research also helped protect tax equity at the US Supreme Court.
+
+Multilingual and globally engaged, Niko is an alum of UCLA and Columbia University's School of International and Public Affairs. Raised by his amazing mother in northern California, he now lives in Takoma Park, Maryland with his wife, two children, and furry friends: his tabby cat, Loki and his bernedoodle, Archie.
