@@ -1,0 +1,31 @@
+---
+title: "Niko Lusiani"
+subtitle: "**Strategist | Author | Advocate**"
+execute:
+  warning: false
+image: images/SIPA-headshot-NJL.jpg
+about:
+  template: trestles
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/nlusiani/"
+    - text: BlueSky
+      icon: bluesky
+      url: "https://bsky.app/profile/nikolusiani.bsky.social"
+    - text: SSRN
+      icon: SSRN
+      url: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=828583"
+    - icon: envelope
+      text: Contact me
+      href: mailto:nlusiani@gmail.com
+---
+
+Niko Lusiani is a strategist, researcher and policy advocate with 20 years of experience in economic policy and corporate finance research and a proven record of influencing business behavior, mobilizingmajor investors, and securing legislative, regulatory and public policy wins. Former Director of the Corporate Power Program at the [Roosevelt Institute](https://rooseveltinstitute.org/), Senior Advisor at [Oxfam America](https://www.oxfamamerica.org/)'s private sector team and Director of Economic Policy at the [Center for Economic and Social Rights](https://www.cesr.org/), Niko leads interdisciplinary research teams and designs influence strategies toward putting finance and business at the service of people and planet.
+
+Skilled in managing cross-cultural and multilingual teams, mentoring emerging leaders, conducting creative interdisciplinary research and translating complex economic and corporate finance analysis into impactful policy advocacy, Niko's publications have been cited by US Congressional leaders, high-level regulators, and has received extensive coverage in top-tier media outlets such as the *New York Times*, *Financial Times* and *Bloomberg*.
+
+You can find his [bio](https://www.nikolusiani.com/about.html), a list of his [publications](https://www.nikolusiani.com/publications.html) and [media](https://www.nikolusiani.com/media.html) appearances across this website.
+
+```         
+```

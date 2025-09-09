@@ -1,0 +1,80 @@
+---
+title: "Publications"
+execute:
+  echo: false
+---
+
+![](images/thumbnails/collage-v1.jpeg){fig-align="center" width="1721"}
+
+I have published a variety of popular, policy and academic writing over the years. Here is a partial list.
+
+```{r}
+#| warning = FALSE, message = FALSE
+library(knitr)
+library(tidyverse)
+library(kableExtra)
+library(lubridate)
+library(DT)
+
+# --- Custom title case function preserving acronyms and all-uppercase words ---
+smart_title <- function(x) {
+  # First do basic title case
+  out <- str_to_title(x)
+  
+  # Restore acronyms using word boundaries
+  out <- str_replace_all(out, "\\bUn\\b", "UN")
+  out <- str_replace_all(out, "\\bUs\\b", "US")
+  out <- str_replace_all(out, "\\bImf\\b", "IMF")
+  out <- str_replace_all(out, "\\bOecd\\b", "OECD")
+  out <- str_replace_all(out, "\\bEsg\\b", "ESG")
+  out <- str_replace_all(out, "\\bVip\\b", "VIP")
+  
+  # Preserve any all-uppercase words (2+ letters)
+  out <- gsub("\\b([A-Z]{2,})\\b", "\\1", out, perl = TRUE)
+  
+  out
+}
+
+# --- Read and transform data ---
+my_data <- read_csv("data/lusiani_work.csv") %>%
+  mutate(`Original Title` = smart_title(`Original Title`)) %>%
+  # lowercase small words (not first word)
+  mutate(`Original Title` = str_replace_all(`Original Title`, " A ", " a ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " An ", " an ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " The ", " the ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " And ", " and ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " But ", " but ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " For ", " for ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " Of ", " of ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " To ", " to ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " On ", " on ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " With ", " with ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " At ", " at ")) %>%
+  mutate(`Original Title` = str_replace_all(`Original Title`, " As ", " as ")) %>%
+  # add links
+  mutate(title = paste0('<a target=_blank href=', Link, '>', `Original Title`, '</a>')) %>%
+  mutate(Date = as.Date(Date, "%m/%d/%y")) %>%
+  filter(Format %in% c("Article", "Econ research", "Legal research", "OpEd")) %>%
+  arrange(desc(Date)) %>%
+  mutate(Year = year(Date), Month = month(Date, label = TRUE, abbr = FALSE)) %>%
+  mutate(title = paste(title, " (", Outlet, ")", sep = "")) %>%
+  mutate(Format = str_replace_all(Format, "White Paper", "Research")) %>%
+  select(Year, Month, Type = Format, Title = title)
+
+# --- Format years and months (avoid repeats) ---
+first_year <- my_data$Year[1]
+my_data$Year <- if_else(my_data$Year != lag(my_data$Year, 1), my_data$Year, as.numeric(NA))
+my_data$Year[1] <- first_year
+
+first_month <- my_data$Month[1]
+my_data$Month <- if_else(my_data$Month != lag(my_data$Month, 1), my_data$Month, as.character(NA))
+my_data$Month[1] <- first_month
+
+# --- Clean stray characters ---
+my_data$Title <- str_remove(my_data$Title, "\xd5")
+my_data$Title <- str_remove(my_data$Title, "\xd4")
+
+# --- Display as interactive table ---
+datatable(my_data, escape = FALSE, rownames = FALSE,
+          options = list(iDisplayLength = 50))
+```

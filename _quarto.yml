@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Niko Lusiani"
+ 
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: publications.qmd
+        text: Publications
+      - href: media.qmd
+        text: Media Appearances
+  search:
+    location: navbar
+    type: overlay
+
+format:
+  html:
+    theme:
+      - litera
+      - brand
+    css: styles.css
+    toc: true
+    fontsize: 0.95em
+
+editor: visual
