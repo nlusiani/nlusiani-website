@@ -1,6 +1,6 @@
 ---
 title: "Niko Lusiani"
-subtitle: "**Strategist | Author | Advocate**"
+subtitle: "**Strategist | Researcher | Advocate**"
 execute:
   warning: false
 image: images/SIPA-headshot-NJL.jpg
@@ -21,11 +21,13 @@ about:
       href: mailto:nlusiani@gmail.com
 ---
 
-Niko Lusiani is a strategist, researcher and policy advocate with 20 years of experience in economic policy and corporate finance research and a proven record of influencing business behavior, mobilizingmajor investors, and securing legislative, regulatory and public policy wins. Former Director of the Corporate Power Program at the [Roosevelt Institute](https://rooseveltinstitute.org/), Senior Advisor at [Oxfam America](https://www.oxfamamerica.org/)'s private sector team and Director of Economic Policy at the [Center for Economic and Social Rights](https://www.cesr.org/), Niko leads interdisciplinary research teams and designs influence strategies toward putting finance and business at the service of people and planet.
+Niko Lusiani is a strategist, researcher and policy advocate with 20 years of experience in economic policy and corporate finance research and a proven record of influencing business behavior, mobilizing major investors, and securing legislative, regulatory and public policy wins. 
 
-Skilled in managing cross-cultural and multilingual teams, mentoring emerging leaders, conducting creative interdisciplinary research and translating complex economic and corporate finance analysis into impactful policy advocacy, Niko's publications have been cited by US Congressional leaders, high-level regulators, and has received extensive coverage in top-tier media outlets such as the *New York Times*, *Financial Times* and *Bloomberg*.
+Former Director of the Corporate Power Program at the [Roosevelt Institute](https://rooseveltinstitute.org/), Senior Advisor at [Oxfam America](https://www.oxfamamerica.org/)'s private sector team and Director of Economic Policy at the [Center for Economic and Social Rights](https://www.cesr.org/), Niko is adept in managing cross-cultural and multilingual teams, mentoring emerging leaders, and conducting creative interdisciplinary research that shape national and global debates.
 
-You can find his [bio](https://www.nikolusiani.com/about.html), a list of his [publications](https://www.nikolusiani.com/publications.html) and [media](https://www.nikolusiani.com/media.html) appearances across this website.
+His research and advocacy have influenced the White House, US Congressional leaders, antitrust and securities regulators, major asset managers, UN negotiators and the US Supreme Court. His work has received extensive coverage in top-tier media outlets such as the *New York Times*, *Financial Times* and *Bloomberg*.
+
+You can find his [bio](https://www.nikolusiani.org/about.html), a list of his [publications](https://www.nikolusiani.org/publications.html) and [media](https://www.nikolusiani.org/media.html) appearances across this website.
 
 ```         
 ```
