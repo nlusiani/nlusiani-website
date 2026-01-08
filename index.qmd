@@ -18,7 +18,7 @@ about:
       url: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=828583"
     - icon: envelope
       text: Contact me
-      href: mailto:nlusiani@gmail.com
+      href: mailto:niko@ran.org
 ---
 
 Niko Lusiani is a strategist, researcher and policy advocate with 20 years of experience in economic policy and corporate finance research and a proven record of influencing business behavior, mobilizing major investors, and securing legislative, regulatory and public policy wins. 
