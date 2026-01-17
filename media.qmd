@@ -6,8 +6,7 @@ execute:
 
 ![](images/ABC%20News%20profits%20image.png){fig-align="center"}
 
-I have appeared on TV, radio, podcasts, and am frequently quoted by journalists. Here is a partial list. Feel free to contact me if you'd like to engage.
-
+I have appeared on TV, radio, podcasts, and am frequently quoted by journalists. Here is a partial list; feel free to contact me if you'd like to engage.
 ```{r}
 #| warning = FALSE, message = FALSE
 library(knitr)

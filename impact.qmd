@@ -5,5 +5,3 @@ execute:
 ---
 
 ![](images/UN_side_event_nlusiani_trusteeship_chamber.jpg){fig-align="center"}
-
-## TKTKTK

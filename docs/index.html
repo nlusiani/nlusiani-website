@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,13 +32,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3ad68af1250fd25d2cbb485b8ed6d32e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d9152d7f364784a5a6516b4a749dc7db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,6 +78,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Niko Lusiani</span>
     </a>
@@ -149,10 +152,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
 <p>Niko Lusiani is a strategist, researcher and policy advocate with 20 years of experience in economic policy and corporate finance research and a proven record of influencing business behavior, mobilizing major investors, and securing legislative, regulatory and public policy wins.</p>
-<p>Former Director of the Corporate Power Program at the <a href="https://rooseveltinstitute.org/">Roosevelt Institute</a>, Senior Advisor at <a href="https://www.oxfamamerica.org/">Oxfam America</a>’s private sector team and Director of Economic Policy at the <a href="https://www.cesr.org/">Center for Economic and Social Rights</a>, Niko is adept in managing cross-cultural and multilingual teams, mentoring emerging leaders, and conducting creative interdisciplinary research that shape national and global debates.</p>
-<p>His research and advocacy have influenced the White House, US Congressional leaders, antitrust and securities regulators, major asset managers, UN negotiators and the US Supreme Court. His work has received extensive coverage in top-tier media outlets such as the <em>New York Times</em>, <em>Financial Times</em> and <em>Bloomberg</em>.</p>
+<p>As Research Director on Climate &amp; Energy at the <a href="https://www.ran.org/">Rainforest Action Network</a>, he leads the organization’s investigations into the energy sector, specifically the role of financial institutions and insurance companies in enabling harmful fossil fuel projects. Previously at the <a href="https://rooseveltinstitute.org/">Roosevelt Institute</a>, Senior Advisor at <a href="https://www.oxfamamerica.org/">Oxfam America</a>’s private sector team and Director of Economic Policy at the <a href="https://www.cesr.org/">Center for Economic and Social Rights</a>, Niko is adept in managing cross-cultural and multilingual teams, mentoring emerging leaders, and conducting creative interdisciplinary research that shapes national and global debates.</p>
+<p>His research and advocacy have influenced the White House, US Congressional leaders, antitrust and securities regulators, major asset managers, UN negotiators and the US Supreme Court. His work has received extensive coverage in top-tier media outlets, such as the <em>New York Times</em>, <em>Financial Times</em> and <em>Bloomberg</em>.</p>
 <p>You can find his <a href="https://www.nikolusiani.org/about.html">bio</a>, a list of his <a href="https://www.nikolusiani.org/publications.html">publications</a> and <a href="https://www.nikolusiani.org/media.html">media</a> appearances across this website.</p>
-<pre><code></code></pre>
 
 
 </main></div>
@@ -202,13 +204,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -7,7 +7,6 @@ execute:
 ![](images/thumbnails/collage-v1.jpeg){fig-align="center" width="1721"}
 
 I have published a variety of popular, policy and academic writing over the years. Here is a partial list.
-
 ```{r}
 #| warning = FALSE, message = FALSE
 library(knitr)
